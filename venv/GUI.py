@@ -72,6 +72,7 @@ def signUp():
         else:
             failWin = Toplevel()
             labelFail = Label(failWin, text = 'Invalid Password and Username').grid(row = 0, column = 0)
+   
     win = Toplevel()
     win.geometry('400x300')
     labelUsername = Label(win, text = 'Choose a Username')

@@ -1,6 +1,7 @@
 import pygame, sys
 from random import randint
 import Snake
+import Breakout
 def play():
     pygame.init()
 
@@ -40,7 +41,8 @@ def play():
                     if(text2Rect.collidepoint(mousePos)):
                         Snake.run(screen)
                     if(text3Rect.collidepoint(mousePos)):
-                        Breakout.run()
+                        Breakout.run(screen)
+                        
 
             screen.fill(black)
             font = pygame.font.SysFont('lucidasans', 32)
